@@ -5,43 +5,21 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Video Statistics</title>
     <link href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" rel="stylesheet">
-    <style>
-	.styled-button {
-            display: inline-block;
-            padding: 8px 7px;
-            background-color: #007bff;
-            color: #fff;
-            font-size: 16px;
-            border: none;
-            border-radius: 5px;
-            cursor: pointer;
-            text-decoration: none;
-            text-align: center;
-            transition: background-color 0.3s ease;
-        }
-        .styled-button:hover {
-            background-color: #0056b3;
-        }
-        table {
-            border-collapse: collapse;
-            width: 98%;
-            margin-left: 1%;
-        }
-        th, td {
-            border: 1px solid #ddd;
-            padding: 5px;
-            text-align: center;
-			width: 190px;
-        }
-        th {
-            background-color: #f2f2f2;
-        }
-    </style>
+	<link rel="stylesheet" href="dashboard.css">
+    
 </head>
 <body>
-
-    <div class=" overflow-hidden p-4 " style="width: 70%;margin-left: 30%;">
-        <div class=" grid grid-cols-3 gap-8 bg-blue-200 py-6" style="display: flex;justify-content: space-between;">
+	
+    <div class=" overflow-hidden p-4 " style="width: 98%;display:flex;">
+	 <div class="channel-container">
+			<div class="channel-icon">
+				<img src="1.png" alt="Channel Icon">
+			</div>
+			<div class="channel-name">Your Channel Name</div>
+			<div class="subscriber-count">Subscribers: 100,000</div>
+		</div>
+		
+        <div class=" grid grid-cols-3 gap-8 bg-blue-200 py-6" style="display: flex;justify-content: space-between; margin-left:3%;">
               <div class="h-32 w-64 ml-4 py-6 text-center border bg-white shadow-lg">
                 <div class="text-lg">{{videos.count}}</div>
                  <h2 class="text-lg mt-4 capitalize">total videos</h2>
@@ -69,7 +47,7 @@
 			
         </tr>
         <tr>
-            <td><img src="test.png" alt="Video Thumbnail" style="height: 100px;"> </td>
+            <td><img src="1.png" alt="Video Thumbnail" style="height: 100px;"> </td>
             <td>Public</td>
             <td>150 Likes (75%)</td>
             <td>10,000</td>
