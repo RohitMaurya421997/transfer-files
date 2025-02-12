@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Video Upload Form</title>
+    <link rel="stylesheet" href="video_upload_page_9_jan_2025_v4_full.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <div class="container">
+        <h1>🎬 Video Information</h1>
+
+        <!-- Drag & Drop Section -->
+        <div class="drag-drop" id="drop-area">
+            <i class="fa-solid fa-cloud-arrow-up fa-2x"></i>
+            <p>Drag and drop video files here or click to select</p>
+            <input type="file" id="videoInput" accept="video/*" hidden>
+        </div>
+
+        <!-- Video Details -->
+        <label>📌 Video Title:</label>
+        <input type="text" placeholder="Enter title" id="videoTitle">
+
+        <label>📝 Video Description:</label>
+        <textarea placeholder="Enter description" id="videoDescription"></textarea>
+
+        <!-- Tag Section (Old Style) -->
+        <label>🏷️ Video Tags:</label>
+        <div class="tag-container">
+            <input type="text" id="tagInput" placeholder="Enter tag (max 90 characters)">
+            <button id="addTagBtn"><i class="fa-solid fa-tag"></i> Add Tag</button>
+        </div>
+        <p id="charCount">0 / 600 characters used</p>
+        <div id="tagsDisplay"></div>
+
+        <!-- Dropdowns Section -->
+        <div class="dropdowns">
+            <div>
+                <label>🌍 Country:</label>
+                <select id="country">
+                    <option>USA</option>
+                    <option>Canada</option>
+                    <option>UK</option>
+                    <option>India</option>
+                </select>
+            </div>
+            <div>
+                <label>👁️ Visibility:</label>
+                <select id="visibility">
+                    <option>Public</option>
+                    <option>Private</option>
+                    <option>Unlisted</option>
+                </select>
+            </div>
+            <div>
+                <label>🗣️ Video Language:</label>
+                <select id="language">
+                    <option>English</option>
+                    <option>Spanish</option>
+                    <option>French</option>
+                    <option>German</option>
+                </select>
+            </div>
+            <div>
+                <label>🎥 Video Category:</label>
+                <select id="category">
+                    <option>Education</option>
+                    <option>Entertainment</option>
+                    <option>Technology</option>
+                    <option>Sports</option>
+                </select>
+            </div>
+            <div>
+                <label>👶 Target Audience Age:</label>
+                <select id="audience">
+                    <option>Above 14</option>
+                    <option>All Ages</option>
+                    <option>18+</option>
+                </select>
+            </div>
+        </div>
+
+        <!-- Video Thumbnail Preview -->
+        <label>📸  Video Thumbnail:</label>
+        <input type="file" id="thumbnailInput" accept="image/*">
+        <div id="thumbnailPreview"></div>
+
+        <!-- Submit Button -->
+         <button type="submit" class="submit-btn">
+    🚀 Submit Video
+</button>
+    </div>
+
+    <script src="video_upload_page_9_jan_2025_v4_full.js"></script>
+</body>
+</html>
